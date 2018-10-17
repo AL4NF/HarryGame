@@ -1,0 +1,75 @@
+@font-face {
+  font-family: harry;
+  src:url("fonts/harry.ttf");
+}
+body
+{
+  background-image:url("img/wallpaper.jpg");
+  width: 100%;
+  height: 100vh; /*vh hace que se tome el height de toda la pantalla*/
+  background-size:cover;
+  background-position:top;
+  background-repeat: no-repeat;
+}
+header
+{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+header button
+{
+  background-image:url("img/2.png");
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+  background-size: cover;
+  border: 0;
+  margin: -78px 0 0 -26px;
+  cursor: pointer;
+  font-size: 27px; color: #F4F4EE;
+  color:transparent;
+}
+header button:focus
+{
+  outline:none;
+}
+header button:hover
+{
+  background-image:none;
+  color: white;
+
+}
+section
+{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+section button
+{
+  background-color: #E3F904;
+  font-family: harry;
+  font-style: italic;
+  font-size: 25px;
+  width: 18%;
+  height: 70px;
+  border-radius: 100px;
+}
+section button:focus
+{
+  outline:none;
+}
+
+#logoHeader
+{
+  width: 420px;
+}
+#hogwartsHeader
+{
+  height: : 200px;
+  width: 200px;
+  margin: -42px 0 0 0;
+}
