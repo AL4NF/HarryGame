@@ -1,16 +1,15 @@
 @font-face {
   font-family: harry;
-  src:url("fonts/harry.ttf");
+  src:url("../../assets/fonts/harry.ttf");
 }
 body
 {
-  background-image:url("img/wallpaper.jpg");
+  background-image:url("../../assets/img/wallpaper.jpg");
   width: 100%;
   height: 100vh; /*vh hace que se tome el height de toda la pantalla*/
   background-size:cover;
   background-position:top;
   background-repeat: no-repeat;
-
 }
 header
 {
@@ -22,7 +21,7 @@ header
 }
 header a
 {
-  background-image:url("img/2.png");
+  background-image:url("../../assets/img/2.png");
   height: 200px;
   width: 200px;
   background-color: transparent;
@@ -67,11 +66,6 @@ section div a
   font-family: harry;
   font-style: italic;
   font-size: 45px;
-  text-decoration: none;
-  color:black;
-}
-section div p
-{
   text-align: center;
 }
 section div a:focus

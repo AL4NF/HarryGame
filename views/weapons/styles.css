@@ -1,28 +1,31 @@
 @font-face {
   font-family: harry;
-  src:url("fonts/harry.ttf");
+  src:url("../../assets/fonts/harry.ttf");
 }
-body
+*
 {
-  background-image:url("img/wallpaper.jpg");
-  width: 100%;
-  height: 100vh; /*vh hace que se tome el height de toda la pantalla*/
   background-size:cover;
   background-position:top;
   background-repeat: no-repeat;
-
+}
+body
+{
+  background-image:url("../../assets/img/wallpaper.jpg");
+  width: 100%;
+  height: 100vh; /*vh hace que se tome el height de toda la pantalla*/
+  /* background-size:cover;
+  background-position:top;
+  background-repeat: no-repeat; */
 }
 header
 {
   display:flex;
   justify-content:space-between;
   align-items: center;
-  width:100%;
-  height:25%;
 }
 header a
 {
-  background-image:url("img/2.png");
+  background-image:url("../../assets/img/2.png");
   height: 200px;
   width: 200px;
   background-color: transparent;
@@ -45,38 +48,35 @@ header a:hover
 {
   background-image:none;
   color: white;
-
 }
+
+
+
 section
 {
-  display:flex;
-  justify-content:center;
-  align-items: center;
   width: 100%;
   height: 60%;
 }
-section div
-{
-  background-color: #E3F904;
-  width: 18%;
-  height: 70px;
-  border-radius: 100px;
-}
-section div a
-{
-  font-family: harry;
-  font-style: italic;
-  font-size: 45px;
-  text-decoration: none;
-  color:black;
-}
-section div p
+section h1
 {
   text-align: center;
+  font-family:harry;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
-section div a:focus
+section div
 {
-  outline:none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section div img
+{
+
+  width: 250px;
+  height: 250px;
+  /* margin:auto 0 auto 0; */
 }
 
 #logoHeader
@@ -85,7 +85,7 @@ section div a:focus
 }
 #hogwartsHeader
 {
-  height:200px;
+  height: : 200px;
   width: 200px;
   margin: -42px 0 0 0;
 }
