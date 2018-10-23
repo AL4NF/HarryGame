@@ -65,7 +65,7 @@ h1
   margin-bottom: 60px;
   color: white;
 }
-section
+ section
 {
   width: 100%;
   height: 60%;
@@ -75,7 +75,6 @@ section
 section a
 {
   width: 250px;
-  /* height: 300px; */
   display: inline-block;
   font-family: harry;
   font-size: 45px;
@@ -88,6 +87,7 @@ section img
 {
   width: 100%;
 }
+
 
 #logoHeader
 {

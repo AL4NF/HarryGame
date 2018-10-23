@@ -56,24 +56,6 @@ header :hover
   background-image:none;
   color: white;
 }
-h1
-{
-  text-align: center;
-  font-family:harry;
-  font-size: 60px;
-  margin-top: 0;
-  margin-bottom: 60px;
-  color: white;
-}
-
-/*section
-{
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: space-around;
-}*/
-
 #logoHeader
 {
   width: 420px;
@@ -83,4 +65,55 @@ h1
   height: : 200px;
   width: 200px;
   margin: -42px 0 0 0;
+}
+h1
+{
+  text-align: center;
+  font-family:harry;
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 60px;
+  color: white;
+}
+section input
+{
+  display: none;
+}
+section label
+{
+  vertical-align: top;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+label:hover
+{
+  box-shadow: 5px 5px 5px gray;
+  transform: translateY(-5px); /*Sirve para resaltar(se mueve 5px eje Y arriba)*/
+  /* transform:translateX(10px); */
+}
+section div
+{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+form img
+{
+  width: 100%;
+}
+.obliviate
+{
+  background-image: url("../../assets/img/PotterWand.jpg");
+}
+.expelliarmus
+{
+  background-image: url("../../assets/img/HermioneWand.jpg");
+}
+.crucio
+{
+  background-image: url("../../assets/img/MalfoyWand.jpg");
 }
