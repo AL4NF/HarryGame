@@ -46,6 +46,16 @@ header :hover
   background-image:none;
   color: white;
 }
+#logoHeader
+{
+  width: 420px;
+}
+#hogwartsHeader
+{
+  height: : 200px;
+  width: 200px;
+  margin: -42px 0 0 0;
+}
 #menu
 {
   background-image: url("../../assets/img/Hogwarts.png");
@@ -57,12 +67,7 @@ header :hover
   color: white;
 }
 
-section
-{
-  width: 100%;
-  height: 60%;
-}
-section h1
+ .firstSection h1
 {
   text-align: center;
   font-family:harry;
@@ -70,27 +75,195 @@ section h1
   margin-top: 0;
   margin-bottom: 60px;
 }
-section div
+.firstSection div
 {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-section div img
-{
 
+.firstSection input
+{
+  display: none;
+}
+.firstSection label
+{
+  cursor: pointer;
+  width: 242px;
+  height: 290px;
+  display: inline-block;
+  font-family: harry;
+  font-size: 20px;
+  text-align: center;
+}
+.firstSection label:hover
+{
+  transform: translateY(-5px);
+}
+.firstSection form img
+{
+  width: 100%;
+}
+.Slytherin
+{
+ background-image: url("../../assets/img/slytherin.png");
+}
+.Ravenclaw
+{
+ background-image: url("../../assets/img/raven.png");
+}
+.Hufflepuff
+{
+ background-image: url("../../assets/img/huffle.png");
+}
+.Gryffindor
+{
+ background-image: url("../../assets/img/gryffin.png");
+}
+
+/* ------------------------------------------------------ */
+.secondSection h1
+{
+ text-align: center;
+ font-family:harry;
+ font-size: 60px;
+ margin-top: 0;
+ margin-bottom: 60px;
+}
+.secondSection div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.secondSection div input
+{
+  display: none;
+}
+.secondSection div label
+{
+  cursor: pointer;
   width: 250px;
   height: 250px;
-  /* margin:auto 0 auto 0; */
+  display: inline-block;
+  font-family: harry;
+  font-size: 20px;
+  text-align: center;
+}
+.secondSection div label:hover
+{
+  box-shadow: 5px 5px 5px gray;
+  transform: translateY(-5px); /*Sirve para resaltar(se mueve 5px eje Y arriba)*/
+  /* transform:translateX(10px); */
+}
+.secondSection  div form img
+{
+  width: 100%;
+}
+.obliviate
+{
+  background-image: url("../../assets/img/PotterWand.jpg");
+}
+.expelliarmus
+{
+  background-image: url("../../assets/img/HermioneWand.jpg");
+}
+.crucio
+{
+  background-image: url("../../assets/img/MalfoyWand.jpg");
 }
 
-#logoHeader
+/* ------------------------------------------------------ */
+.thirdSection h1
 {
-  width: 420px;
+ text-align: center;
+ font-family:harry;
+ font-size: 60px;
+ margin-top: 0;
+ margin-bottom: 60px;
 }
-#hogwartsHeader
+.thirdSection div
 {
-  height: : 200px;
-  width: 200px;
-  margin: -42px 0 0 0;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+
+.thirdSection div input
+{
+ display: none;
+}
+.thirdSection div label
+{
+ cursor: pointer;
+ width: 242px;
+ height: 290px;
+ display: inline-block;
+ font-family: harry;
+ font-size: 20px;
+ text-align: center;
+}
+.thirdSection div label:hover
+{
+ transform: translateY(-5px);
+}
+.thirdSection div form img
+{
+ width: 100%;
+}
+/* ------------------------------------------------------ */
+.fourthSection h1
+{
+ text-align: center;
+ font-family:harry;
+ font-size: 60px;
+ margin-top: 0;
+ margin-bottom: 60px;
+}
+.fourthSection div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fourthSection div input
+{
+  display: none;
+}
+.fourthSection div label
+{
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  font-family: harry;
+  font-size: 20px;
+  text-align: center;
+}
+.fourthSection div label:hover
+{
+  box-shadow: 5px 5px 5px gray;
+  transform: translateY(-5px); /*Sirve para resaltar(se mueve 5px eje Y arriba)*/
+  /* transform:translateX(10px); */
+}
+.fourthSection  div form img
+{
+  width: 100%;
+}
+.obliviate
+{
+  background-image: url("../../assets/img/PotterWand.jpg");
+}
+.expelliarmus
+{
+  background-image: url("../../assets/img/HermioneWand.jpg");
+}
+.crucio
+{
+  background-image: url("../../assets/img/MalfoyWand.jpg");
+}
+
+.hidden
+{
+  display: none;
 }

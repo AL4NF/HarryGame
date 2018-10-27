@@ -7,17 +7,17 @@
   <link href="../../assets/img/Harry.png" rel="shortcut icon">
 </head>
 
-<body>
-  <header>
-    <a href="../instructions/instructions.html"><p>Instructions</p></a>
-    <img id="logoHeader"src="../../assets/img/harryLogo.png">
-    <a id="menu"href="../../index.html"><p>Menu</p></a>
-  </header>
+<body class="firstBackground">
 
-  <section>
+  <section class="firstSection">
+    <header>
+      <a href="../instructions/instructions.html"><p>Instructions</p></a>
+      <img id="logoHeader"src="../../assets/img/harryLogo.png">
+      <a id="menu"href="../../index.html"><p>Menu</p></a>
+    </header>
     <h1>Choose your Spell!</h1>
     <div>
-      <form action =""id="spell-form">
+      <form action="" id="spell-form">
         <label for="obliviate" class="obliviate">
           <h2>Obliviate</h2>
         </label>
@@ -30,8 +30,34 @@
       <input  id="obliviate" name="spells" value="obliviate" type="radio" >
       <input  id="expelliarmus" name="spells" value="expelliarmus" type="radio" >
       <input  id="crucio" name="spells" value="crucio" type="radio" >
-    </div>
-      </form>
+      </div>
+    </form>
+  </section>
+
+
+  <section class="secondSection hidden">
+    <header>
+      <a href="../instructions/instructions.html"><p>Instructions</p></a>
+      <img id="logoHeader"src="../../assets/img/harryLogo.png">
+      <a id="menu"href="../../index.html"><p>Menu</p></a>
+    </header>
+    <h1 class="win1 hidden">You Win,</br>you choose Obliviate and Voldemort choose Crucio</br> You made your opponent forget the spell</h1>
+    <h1 class="win2 hidden">You Win,you choose Expelliarmus and Voldemort choose Obliviate</h1>
+    <h1 class="win3 hidden">You Win,you choose Crucio and Voldemort choose Expelliarmus</h1>
+
+    <h1 class="loose1 hidden">You Loose ,you choose Oblivite and Voldemort choose Expelliarmus</h1>
+    <h1 class="loose2 hidden">You Loose ,you choose Expelliarmus and Voldemort choose Crucio</h1>
+    <h1 class="loose3 hidden">You Loose ,you choose Crucio and Voldemort choose Obliviate</h1>
+
+    <h1 class="tie hidden">It's a Tie</h1>
+
+      <div>
+        <img class="empate hidden"src="../../assets/img/empate.gif">
+        <img class="harryWin hidden"src="../../assets/img/harry-win.gif">
+        <img class="voldWin hidden"src="../../assets/img/voldewin.gif">
+
+      </div>
+
   </section>
 
 <script src="scripts.js"></script>

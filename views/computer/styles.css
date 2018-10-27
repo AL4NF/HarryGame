@@ -10,9 +10,12 @@
 }
 body
 {
-  background-image:url("../../assets/img/wallpaper3.jpg");
   width: 100%;
   height: 100vh; /*vh hace que se tome el height de toda la pantalla*/
+}
+.firstBackground
+{
+  background-image:url("../../assets/img/wallpaper3.jpg");
 }
 header
 {
@@ -75,33 +78,33 @@ h1
   margin-bottom: 60px;
   color: white;
 }
-section input
+.firstSection div
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.firstSection input
 {
   display: none;
 }
-section label
+.firstSection label
 {
-  vertical-align: top;
   cursor: pointer;
   width: 250px;
   height: 250px;
   display: inline-block;
+  font-family: harry;
+  font-size: 20px;
+  text-align: center;
 }
-label:hover
+.firstSection label:hover
 {
   box-shadow: 5px 5px 5px gray;
   transform: translateY(-5px); /*Sirve para resaltar(se mueve 5px eje Y arriba)*/
   /* transform:translateX(10px); */
 }
-section div
-{
-  width: 100%;
-  height: 60%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-form img
+.firstSection form img
 {
   width: 100%;
 }
@@ -116,4 +119,33 @@ form img
 .crucio
 {
   background-image: url("../../assets/img/MalfoyWand.jpg");
+}
+.secondSection h1
+{
+  margin-bottom: 0;
+}
+.secondSection h2
+{
+  color: white;
+  text-align: center;
+  font-family:harry;
+  font-size: 50px;
+  margin-top:0;
+}
+.secondSection div
+{
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.secondSection div img
+{
+  width: 900px;
+  /* margin: 0 0 0 0; */
+}
+
+.hidden
+{
+  display: none;
 }
