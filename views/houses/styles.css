@@ -281,16 +281,17 @@ header :hover
   margin-bottom: 60px;
   color: white;
 }
-.imageContainer
-{
-  /* display: inline-block; */
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+
 .fifthSection img
 {
   width: 250px;
+}
+
+.container
+{
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
 }
 
 

@@ -19,10 +19,14 @@ const win1_2p=document.querySelector(".win1_2p");
 const win2_2p=document.querySelector(".win2_2p");
 const win3_2p=document.querySelector(".win3_2p");
 
-const slytherin_img=document.querySelector(".slytherin_img");
-const raven_img=document.querySelector(".raven_img");
-const huffle_img= document.querySelector(".huffle_img");
-const gryffin_img=document.querySelector(".gryffin_img");
+const c1House =document.querySelector(".c1House");
+const c2House =document.querySelector(".c2House");
+
+
+// const slytherin_img=document.querySelector(".slytherin_img");
+// const raven_img=document.querySelector(".raven_img");
+// const huffle_img= document.querySelector(".huffle_img");
+// const gryffin_img=document.querySelector(".gryffin_img");
 
 // p1House.src = "../../assets/img/gryffin.png";
 
@@ -82,25 +86,42 @@ function h(house1,house2)
 {
   if(house1=='Slytherin')
   {
-    slytherin_img.classList.remove('hidden');
+    c1House.src = "../../assets/img/slytherin.png";
+    // slytherin_img.classList.remove('hidden');
   }else if(house1=='Ravenclaw')
   {
-    raven_img.classList.remove('hidden');
+    c1House.src = "../../assets/img/raven.png";
+    // raven_img.classList.remove('hidden');
   }else if(house1=='Hufflepuff')
   {
-    huffle_img.classList.remove('hidden');
+    c1House.src = "../../assets/img/huffle.png";
+    // huffle_img.classList.remove('hidden');
   }else if(house1=='Gryffindor')
   {
-    gryffin_img.classist.remove('hidden');
+    // gryffin_img.classist.remove('hidden');
+    c1House.src = "../../assets/img/gryffin.png";
   }
+
 
   if(house2=='Slytherin')
   {
-    slytherin_img.classList.remove('hidden');
-  }else if(house2=='Ravenclaw')
-  {
-    raven_img.classList.remove('hidden');
+    c2House.src = "../../assets/img/slytherin.png";
+    // slytherin_img.classList.remove('hidden');
   }
+  else if(house2=='Ravenclaw')
+  {
+    c2House.src = "../../assets/img/raven.png";
+    // raven_img.classList.remove('hidden');
+  }
+  else if(house2=='Hufflepuff')
+  {
+    c2House.src = "../../assets/img/huffle.png";
+  }
+  else if(house2=='Gryffindor')
+  {
+    c2House.src = "../../assets/img/gryffin.png";
+  }
+
 
 }
 
@@ -109,29 +130,41 @@ function match(spell1,spell2)
   if(spell1=="obliviate" && spell2=="expelliarmus")
   {
     win1_2p.classList.remove('hidden');
+     h (house1,house2);
   }
   else if(spell1=="obliviate" && spell2=="crucio")
   {
     win1.classList.remove('hidden');
+    h (house1,house2);
   }
   else if(spell1=="expelliarmus" && spell2=="obliviate")
   {
     win2.classList.remove('hidden');
+    h (house1,house2);
+
   }
   else if(spell1=="expelliarmus" && spell2=="crucio")
   {
     win2_2p.classList.remove('hidden');
+    h (house1,house2);
+
   }
   else if(spell1=="crucio" && spell2=="expelliarmus")
   {
     win3.classList.remove('hidden');
+    h (house1,house2);
+
   }
   else if(spell1=="crucio" && spell2=="obliviate")
   {
     win3_2p.classList.remove('hidden');
+    h (house1,house2);
+
   }
   else
   {
     tie.classList.remove('hidden');
+    h (house1,house2);
+
   }
 }
