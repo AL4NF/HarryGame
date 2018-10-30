@@ -23,14 +23,6 @@ const c1House =document.querySelector(".c1House");
 const c2House =document.querySelector(".c2House");
 
 
-// const slytherin_img=document.querySelector(".slytherin_img");
-// const raven_img=document.querySelector(".raven_img");
-// const huffle_img= document.querySelector(".huffle_img");
-// const gryffin_img=document.querySelector(".gryffin_img");
-
-// p1House.src = "../../assets/img/gryffin.png";
-
-
 for(let i=0;i<inputs.length;i++)
 {
   inputs[i].addEventListener("click",chooseHouse1)
@@ -54,7 +46,6 @@ function chooseHouse1(event)
   house1 = event.target.value;
   firstSection.classList.add('hidden');
   secondSection.classList.remove('hidden');
-  // alert(house1);
 }
 var spell1;
 function chooseSpell1()
@@ -63,7 +54,6 @@ function chooseSpell1()
   spell1=event.target.value;
   secondSection.classList.add('hidden');
   thirdSection.classList.remove('hidden');
-  // alert(spell1);
 }
 var house2;
 function chooseHouse2()
@@ -71,14 +61,12 @@ function chooseHouse2()
   house2=event.target.value;
   thirdSection.classList.add('hidden');
   fourthSection.classList.remove('hidden');
-  // alert(house2);
 }
 function chooseSpell2 ()
 {
   let spell2= event.target.value;
   fourthSection.classList.add('hidden');
   fifthSection.classList.remove('hidden');
-  // alert(spell2);
   match(spell1,spell2);
 }
 
@@ -141,30 +129,25 @@ function match(spell1,spell2)
   {
     win2.classList.remove('hidden');
     h (house1,house2);
-
   }
   else if(spell1=="expelliarmus" && spell2=="crucio")
   {
     win2_2p.classList.remove('hidden');
     h (house1,house2);
-
   }
   else if(spell1=="crucio" && spell2=="expelliarmus")
   {
     win3.classList.remove('hidden');
     h (house1,house2);
-
   }
   else if(spell1=="crucio" && spell2=="obliviate")
   {
     win3_2p.classList.remove('hidden');
     h (house1,house2);
-
   }
   else
   {
     tie.classList.remove('hidden');
     h (house1,house2);
-
   }
 }

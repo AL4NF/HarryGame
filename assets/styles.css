@@ -89,3 +89,49 @@ section div a:focus
   width: 200px;
   margin: -42px 0 0 0;
 }
+section audio:hover
+{
+
+}
+.snitch
+{
+
+  position:absolute;
+  right: 0px;
+  top: 450px;
+  width: 100px;
+  animation-name: fly;
+  animation-duration: 4.6s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0.8s;
+}
+.ron
+{
+  position:absolute;
+  right: 0px;
+  top: 300px;
+  width: 200px;
+  animation-name: fly;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+.harry
+{
+  position: absolute;
+  right: 0px;
+  top:600px;
+  animation-name:fly;
+  animation-duration: 5.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  width: 200px;
+  animation-delay: 1s;
+}
+@keyframes fly
+{
+  from{transform: translate(200);}
+    to{transform: translate(-1500px);}
+}

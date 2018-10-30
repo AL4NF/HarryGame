@@ -266,12 +266,6 @@ header :hover
   background-image: url("../../assets/img/MalfoyWand.jpg");
 }
 /* ------------------------------------------------------ */
-/* .fifthSection
-{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
 .fifthSection h1
 {
   text-align: center;
@@ -293,7 +287,6 @@ header :hover
   justify-content: space-around;
   display: flex;
 }
-
 
 .hidden
 {
