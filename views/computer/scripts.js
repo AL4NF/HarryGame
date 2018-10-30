@@ -3,10 +3,10 @@ const firstBackground=document.querySelector(".firstBackground");
 //Escondiendo el firstSection y mostrando el secondSection
 const firstSection=document.querySelector(".firstSection");
 const secondSection=document.querySelector(".secondSection");
-//trayendo los valores...
-const obliviate =document.querySelector(".obliviate");
-const expelliarmus =document.querySelector(".expelliarmus");
-const crucio =document.querySelector(".crucio");
+// //No se debe hacer esto...trayendo los valores...
+// const obliviate =document.querySelector(".obliviate");
+// const expelliarmus =document.querySelector(".expelliarmus");
+// const crucio =document.querySelector(".crucio");
 //posibles casos de jugador
 const empate=document.querySelector(".empate");
 const harryWin=document.querySelector(".harryWin");

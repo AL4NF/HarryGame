@@ -6,7 +6,7 @@
   <link href="styles.css" rel="stylesheet">
   <link href="../../assets/img/Harry.png" rel="shortcut icon">
 </head>
-<body>
+<body class="firstBackground">
 
   <section class="firstSection">
     <header>
@@ -31,6 +31,7 @@
         <input id="Gryffindor" name="houses"value="Gryffindor" type="radio">
       </form>
     </section>
+
   <section class="secondSection">
         <header>
           <a href="../instructions/instructions.html"><p>Instructions</p></a>
@@ -55,6 +56,7 @@
           </div>
         </form>
   </section>
+
   <section class="thirdSection">
     <header>
       <a href="../instructions/instructions.html"><p>Instructions</p></a>
@@ -64,20 +66,21 @@
     <h1>2pChoose your House!</h1>
     <div>
       <form action="" id="houses-form">
-        <label for="Slytherin" class="Slytherin">
+        <label for="Slytherin1" class="Slytherin">
         </label>
-        <label for="Ravenclaw" class="Ravenclaw">
+        <label for="Ravenclaw1" class="Ravenclaw">
         </label>
-        <label for="Hufflepuff" class="Hufflepuff">
+        <label for="Hufflepuff1" class="Hufflepuff">
         </label>
-        <label for="Gryffindor" class="Gryffindor">
+        <label for="Gryffindor1" class="Gryffindor">
         </label>
-        <input id="Slytherin"  name="houses"value="Slytherin" type="radio">
-        <input id="Ravenclaw"  name="houses"value="Ravenclaw" type="radio">
-        <input id="Hufflepuff" name="houses"value="Hufflepuff" type="radio">
-        <input id="Gryffindor" name="houses"value="Gryffindor" type="radio">
+        <input id="Slytherin1"  name="houses2p"value="Slytherin" type="radio">
+        <input id="Ravenclaw1"  name="houses2p"value="Ravenclaw" type="radio">
+        <input id="Hufflepuff1" name="houses2p"value="Hufflepuff" type="radio">
+        <input id="Gryffindor1" name="houses2p"value="Gryffindor" type="radio">
       </form>
   </section>
+
   <section class="fourthSection">
     <header>
       <a href="../instructions/instructions.html"><p>Instructions</p></a>
@@ -87,22 +90,61 @@
     <h1>2pChoose your Spell!</h1>
     <div>
       <form action="" id="spell-form">
-        <label for="obliviate" class="obliviate">
+        <label for="obliviate2" class="obliviate">
           <h2>Obliviate</h2>
         </label>
-        <label for="expelliarmus" class="expelliarmus">
+        <label for="expelliarmus2" class="expelliarmus">
           <h2>Expelliarmus</h2>
         </label>
-        <label for="crucio" class="crucio">
+        <label for="crucio2" class="crucio">
           <h2>Crucio</h2>
         </label>
-      <input  id="obliviate" name="spells" value="obliviate" type="radio" >
-      <input  id="expelliarmus" name="spells" value="expelliarmus" type="radio" >
-      <input  id="crucio" name="spells" value="crucio" type="radio" >
+      <input  id="obliviate2" name="spells2p" value="obliviate" type="radio" >
+      <input  id="expelliarmus2" name="spells2p" value="expelliarmus" type="radio" >
+      <input  id="crucio2" name="spells2p" value="crucio" type="radio" >
       </div>
     </form>
   </section>
 
+  <section class="fifthSection">
+    <header>
+      <a href="../instructions/instructions.html"><p>Instructions</p></a>
+      <img id="logoHeader"src="../../assets/img/harryLogo.png">
+      <a id="menu"href="../../index.html"><p>Menu</p></a>
+    </header>
+
+    <section class="container">
+
+    <article class="Left">
+      <img  class="" src="../../assets/img/gryffin.png">
+    </article>
+
+    <article class="Center">
+      <h1 class="win1 hidden">Player1 Win,</br>you choose Obliviate and Player2 choose Crucio</br> You made your opponent forget the spell</h1>
+      <h1 class="win2 hidden">Player1 Win,you choose Expelliarmus and Player2 choose Obliviate</h1>
+      <h1 class="win3 hidden">Player1 Win,you choose Crucio and Player2 choose Expelliarmus</h1>
+
+      <h1 class="win1_2p hidden">Player2 Win,</br>you choose Obliviate and Player1 choose Expelliarmus</h1>
+      <h1 class="win2_2p hidden">Player2 Win,you choose Expelliarmus and Player1 choose Crucio</h1>
+      <h1 class="win3_2p hidden">Player2 Win,you choose Crucio and Player1 choose Obliviate</h1>
+
+      <h1 class="tie hidden">It's a Tie</h1>
+    </article>
+
+    <article class="Right">
+      <img  class="" src="../../assets/img/gryffin.png">
+    </article>
+
+  </section>
+
+    <!-- <div class="imageContainer">
+        <img class="slytherin_img"src="../../assets/img/slytherin.png">
+        <img class="raven_img"src="../../assets/img/raven.png">
+        <img class="huffle_img"src="../../assets/img/huffle.png">
+        <img class="gryffin_img"src="../../assets/img/gryffin.png">
+
+    </div> -->
+  </section>
 
 <script src="scripts.js"></script>
 </body>
