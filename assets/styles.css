@@ -89,9 +89,10 @@ section div a:focus
   width: 200px;
   margin: -42px 0 0 0;
 }
-section audio:hover
-{
 
+.megaphone
+{
+  margin: 55px 0px 0px 30px;
 }
 .snitch
 {
